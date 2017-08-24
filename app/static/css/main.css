@@ -64,11 +64,11 @@ h3 {
   background-color: #017fb5;
 }
 
-.navbar-nav li a:hover, 
+.navbar-nav li a:hover,
 .navbar-nav li a:focus {
   outline:none;
   outline-offset: 0;
-  text-decoration:none;  
+  text-decoration:none;
   background: transparent;
 }
 
@@ -315,7 +315,7 @@ section {
 ********About CSS*******
 **************************/
 #about-us {
-  background-image: url(../images/about-bg.jpg);
+  background-image: url(../images/contact-bg.jpg);
   padding: 60px 0;
 }
 
