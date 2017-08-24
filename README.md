@@ -1,2 +1,4 @@
 # hufscomplain_web
-hufscomplain
+
+html파일 -> /app/templates
+CSS or JS or the other else -> /static/
