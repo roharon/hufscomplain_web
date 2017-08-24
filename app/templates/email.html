@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width" initial-scale=3", minimum-scale="3">
+
+    <title>훕스 컴플레인</title>
+<style>
+
+
+input[type=email], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[name='message'], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+} /* Red */
+</style>
+</head>
+
+<body>
+<div class="form-actions">
+<form method="post">
+
+    {% csrf_token %}
+
+    <h2>훕스컴플레인 전달하기</h2>
+    <br>
+    <p>작성된 내용은 어떠한 수정없이 글로벌캠퍼스 학생회에 바로 전달됩니다.</p>
+    <br><br><br>
+    <label for="fname">사용자 이메일</label>
+    <input type="text" id="id_from_email" name="from_email" placeholder="사용자의 이메일을 적으세요" required>
+    <label for="fname">제목</label>
+    <input type="text" id="id_subject" name="subject" placeholder="제목" required>
+    <br>
+    <label for="fname">전달할 내용</label>
+    <input type="text" id="id_message" name="message" placeholder="전달할 내용" rows="5" required>
+    <br>
+
+    <input type="checkbox" id="accpet" required>
+    <label for="accpet">이메일 및 작성된 내용 수집에 동의합니다.</label>
+    <br>
+    <input type="submit" value="전달하기" class="button button3">
+
+
+
+
+</form>
+</div>
+</body>
